@@ -54,7 +54,7 @@ const certificationsData = [
     },
     {
         category: "web",
-        image: "images/certification/nftp.png",
+        image: "images/certification/nftp.PNG",
         overlayIcon: "fas fa-code",
         badgeStyle: "background: var(--accent-color)",
         badgeIcon: "fas fa-code",
