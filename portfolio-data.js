@@ -9,8 +9,8 @@ const portfolioData = {
             "categories": ["fullstack", "angular", "dotnet"],
             "technologies": ["Angular", ".NET Core", "SQL Server", "Stripe API"],
             "links": {
-                "demo": "#",
-                "code": "#"
+                "demo": "projectDetails.html?id=ecommerce-dashboard1",
+               "code": "https://github.com/yourusername/ecommerce-platform"
             }
         },
         {
@@ -21,8 +21,8 @@ const portfolioData = {
             "categories": ["angular"],
             "technologies": ["Angular", "NgRx", "Chart.js", "Bootstrap"],
             "links": {
-                "demo": "#",
-                "code": "#"
+               "demo": "projectDetails.html?id=ecommerce-dashboard1",
+               "code": "https://github.com/yourusername/ecommerce-platform"
             }
         },
         {
@@ -33,8 +33,8 @@ const portfolioData = {
             "categories": ["dotnet"],
             "technologies": [".NET Core", "Entity Framework", "JWT Auth", "Swagger"],
             "links": {
-                "docs": "#",
-                "code": "#"
+                 "demo": "projectDetails.html?id=ecommerce-dashboard1",
+               "code": "https://github.com/yourusername/ecommerce-platform"
             }
         },
         {
@@ -45,8 +45,8 @@ const portfolioData = {
             "categories": ["fullstack", "angular", "dotnet"],
             "technologies": ["Angular", ".NET Core", "Azure", "SignalR"],
             "links": {
-                "demo": "#",
-                "code": "#"
+                 "demo": "projectDetails.html?id=portfolio-website",
+               "code": "https://github.com/yourusername/ecommerce-platform"
             }
         },
         {
@@ -57,8 +57,8 @@ const portfolioData = {
             "categories": ["angular"],
             "technologies": ["Angular", "Firebase", "Drag & Drop", "Material UI"],
             "links": {
-                "demo": "#",
-                "code": "#"
+                 "demo": "projectDetails.html?id=portfolio-website",
+               "code": "https://github.com/yourusername/ecommerce-platform"
             }
         },
         {
@@ -69,8 +69,8 @@ const portfolioData = {
             "categories": ["dotnet"],
             "technologies": [".NET Core", "RabbitMQ", "Docker", "Redis"],
             "links": {
-                "docs": "#",
-                "code": "#"
+                 "demo": "projectDetails.html?id=portfolio-website",
+               "code": "https://github.com/yourusername/ecommerce-platform"
             }
         }
     ]
