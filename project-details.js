@@ -186,15 +186,15 @@ function populateHeader(header) {
     $('.project-title').text(header.title);
     $('.project-subtitle').text(header.subtitle);
     
-    const $links = $('.project-links');
-    $links.empty();
-    header.links.forEach(link => {
-        $links.append(`
-            <a href="${link.href}" class="action-btn ${link.class}" ${link.id ? `id="${link.id}"` : ''} target="_blank">
-                <i class="${link.icon}"></i> ${link.text}
-            </a>
-        `);
-    });
+    // const $links = $('.project-links');
+    // $links.empty();
+    // header.links.forEach(link => {
+    //     $links.append(`
+    //         <a href="${link.href}" class="action-btn ${link.class}" ${link.id ? `id="${link.id}"` : ''} target="_blank">
+    //             <i class="${link.icon}"></i> ${link.text}
+    //         </a>
+    //     `);
+    // });
 }
 
 // Function to populate gallery section

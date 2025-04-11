@@ -253,7 +253,7 @@
     
         /* Hero Section - Modified */
         .hero-section {
-            min-height: 100vh;
+            min-height: 70vh;
             display: flex;
             align-items: center;
             background: linear-gradient(135deg, rgba(33, 37, 41, 0.95), rgba(33, 37, 41, 0.95)), 
@@ -348,109 +348,11 @@
         }
     
         /* Hero Image Slider */
-        .hero-image-container {
-            position: relative;
-            width: 100%;
-            height: 400px;
-            overflow: hidden;
-        }
-    
-        .hero-slider {
-            position: relative;
-            width: 100%;
-            height: 100%;
-            display: flex;
-            transition: transform 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-        }
-    
-        .hero-image {
-            position: relative;
-            min-width: 100%;
-            height: 100%;
-            border-radius: 20px;
-            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3);
-            filter: drop-shadow(0 10px 20px rgba(67, 97, 238, 0.3));
-            overflow: hidden;
-        }
-    
-        .hero-image img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            transition: transform 0.5s ease;
-        }
-    
-        .hero-image:hover img {
-            transform: scale(1.05);
-        }
-    
-        .hero-nav-dots {
-            position: absolute;
-            bottom: 20px;
-            left: 50%;
-            transform: translateX(-50%);
-            display: flex;
-            z-index: 5;
-        }
-    
-        .hero-nav-dot {
-            width: 12px;
-            height: 12px;
-            border-radius: 50%;
-            background: rgba(255, 255, 255, 0.5);
-            margin: 0 5px;
-            cursor: pointer;
-            transition: all 0.3s ease;
-        }
-    
-        .hero-nav-dot.active {
-            background: var(--accent-color);
-            transform: scale(1.2);
-        }
-    
-        .hero-nav-dot:hover {
-            background: var(--primary-color);
-        }
-    
-        .hero-nav-arrow {
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            width: 40px;
-            height: 40px;
-            background: rgba(255, 255, 255, 0.2);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            cursor: pointer;
-            z-index: 5;
-            transition: all 0.3s ease;
-            opacity: 0;
-        }
-    
-        .hero-nav-arrow:hover {
-            background: rgba(255, 255, 255, 0.4);
-        }
-    
-        .hero-image-container:hover .hero-nav-arrow {
-            opacity: 1;
-        }
-    
-        .hero-nav-arrow.prev {
-            left: 20px;
-        }
-    
-        .hero-nav-arrow.next {
-            right: 20px;
-        }
-    
-        .hero-nav-arrow i {
-            color: white;
-            font-size: 20px;
-        }
-    
-        @keyframes float {
+
+ 
+
+        
+           @keyframes float {
             0% { transform: translateY(0px); }
             50% { transform: translateY(-20px); }
             100% { transform: translateY(0px); }
@@ -2272,6 +2174,16 @@
                 font-size: 0.9rem;
             }
         }
+
+ .show-more-btn.expanded {
+    transform: translateY(0) scale(0.95);
+    opacity: 0;
+    height: 0;
+    padding: 0;
+    margin: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
         .modal {
     display: none;
     position: fixed;
@@ -2306,7 +2218,323 @@
     font-weight: bold;
     cursor: pointer;
 }
+.show-more-btn {
+    grid-column: 1 / -1;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    padding: 16px 32px;
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
+    color: white;
+    border: none;
+    border-radius: 50px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    margin: 30px auto;
+    transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
 
+.show-more-btn .btn-text {
+    position: relative;
+    z-index: 2;
+    transition: transform 0.4s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.show-more-btn .btn-icon {
+    position: relative;
+    z-index: 2;
+    transition: transform 0.4s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.show-more-btn:hover {
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+    transform: translateY(-3px);
+}
+
+.show-more-btn:hover .btn-icon {
+    transform: translateX(4px);
+}
+
+/* Pulse animation */
+.show-more-btn::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary-darker) 100%);
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.show-more-btn.hover-effect::after {
+    opacity: 1;
+}
+
+/* Click animation */
+.show-more-btn.click-effect {
+    animation: pulse 0.5s ease;
+}
+
+@keyframes pulse {
+    0% {
+        transform: translateY(-3px) scale(1);
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+    }
+    50% {
+        transform: translateY(-3px) scale(0.95);
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    }
+    100% {
+        transform: translateY(-3px) scale(1);
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+    }
+}
+
+ 
+
+    </style>
+
+
+
+
+    <style>
+    /* Your original hero section styles - preserved exactly */
+.hero-section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(135deg, rgba(33, 37, 41, 0.95), rgba(33, 37, 41, 0.95)), 
+                url('https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80') no-repeat center center/cover;
+    color: #fff;
+    padding-top: 80px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Your existing classes remain untouched */
+.hero-title span {
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+/* New styles only for added elements */
+.hero-image-container {
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    perspective: 1000px;
+}
+
+.hero-main-image {
+    position: relative;
+    z-index: 10;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 20px;
+    border: 3px solid rgba(67, 97, 238, 0.3);
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+    animation: float 6s ease-in-out infinite;
+    filter: drop-shadow(0 0 15px rgba(67, 97, 238, 0.4));
+}
+
+/* Dummy image styles */
+.dummy-image {
+    position: absolute;
+    width: 70%;
+    border-radius: 20px;
+    overflow: hidden;
+    opacity: 0.6;
+    filter: brightness(0.8);
+    z-index: 5;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+.dummy-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.dummy-1 {
+    top: -8%;
+    left: -10%;
+    transform: rotate(-5deg);
+    animation-name: dummyFloat1;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+.dummy-2 {
+    bottom: -8%;
+    right: -10%;
+    transform: rotate(5deg);
+    animation-name: dummyFloat2;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+.dummy-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(67, 97, 238, 0.3);
+    mix-blend-mode: multiply;
+}
+
+/* Tech circle styles */
+.tech-circle {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: rgba(33, 37, 41, 0.9);
+    border: 2px solid var(--primary-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 20px;
+    z-index: 15;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+.tech-circle i {
+    animation: iconBounce 2s infinite;
+}
+
+.tech-circle-1 {
+    top: 15%;
+    right: 5%;
+    animation-name: orbit1;
+}
+
+.tech-circle-2 {
+    top: 65%;
+    left: 5%;
+    animation-name: orbit2;
+}
+
+.tech-circle-3 {
+    bottom: 15%;
+    right: 10%;
+    animation-name: orbit3;
+}
+
+/* Connection line styles */
+.connection-line {
+    position: absolute;
+    background: linear-gradient(to right, rgba(67, 97, 238, 0.5), rgba(247, 37, 133, 0.5));
+    height: 2px;
+    border-radius: 2px;
+    z-index: 8;
+    animation: linePulse 3s infinite alternate;
+}
+
+.line-1 {
+    width: 80px;
+    top: 25%;
+    left: 20%;
+    transform: rotate(30deg);
+}
+
+.line-2 {
+    width: 100px;
+    bottom: 25%;
+    right: 20%;
+    transform: rotate(-20deg);
+    animation-delay: 1s;
+}
+
+/* Animation keyframes */
+@keyframes float {
+    0%, 100% { transform: translateY(0) rotate(0deg); }
+    25% { transform: translateY(-10px) rotate(2deg); }
+    50% { transform: translateY(-15px) rotate(-1deg); }
+    75% { transform: translateY(-10px) rotate(1deg); }
+}
+
+@keyframes dummyFloat1 {
+    0%, 100% { transform: rotate(-5deg) translateY(0); }
+    50% { transform: rotate(-8deg) translateY(-15px); }
+}
+
+@keyframes dummyFloat2 {
+    0%, 100% { transform: rotate(5deg) translateY(0); }
+    50% { transform: rotate(8deg) translateY(15px); }
+}
+
+@keyframes orbit1 {
+    0%, 100% { transform: translate(0, 0); }
+    25% { transform: translate(10px, -10px); }
+    50% { transform: translate(0, -15px); }
+    75% { transform: translate(-10px, -10px); }
+}
+
+@keyframes orbit2 {
+    0%, 100% { transform: translate(0, 0); }
+    25% { transform: translate(-10px, 10px); }
+    50% { transform: translate(0, 15px); }
+    75% { transform: translate(10px, 10px); }
+}
+
+@keyframes orbit3 {
+    0%, 100% { transform: translate(0, 0); }
+    25% { transform: translate(5px, -5px); }
+    50% { transform: translate(10px, 0); }
+    75% { transform: translate(5px, 5px); }
+}
+
+@keyframes iconBounce {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+}
+
+@keyframes linePulse {
+    0% { opacity: 0.3; width: 80%; }
+    100% { opacity: 0.8; width: 100%; }
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+    .hero-image-container {
+        max-width: 350px;
+    }
+    .dummy-image {
+        width: 60%;
+    }
+    .tech-circle {
+        width: 40px;
+        height: 40px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .dummy-image {
+        display: none;
+    }
+    .tech-circle {
+        width: 35px;
+        height: 35px;
+        font-size: 14px;
+    }
+}
+ 
     </style>
 </head>
 <body data-bs-spy="scroll" data-bs-target="#navbar">
@@ -2361,46 +2589,41 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6">
-                    <div class="hero-image-container" data-aos="fade-left" data-aos-delay="200">
-                        <div class="hero-slider">
-                            <!-- Hero Images -->
-                            <div class="hero-image" style="background-color: #3a0ca3;">
-                                <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80" alt="Alex Carter">
+                <div class="col-sm-12 col-md-6 d-md-block">
+                    <div class="hero-image">
+                        <!-- Added wrapper div for new elements -->
+                        <div class="hero-image-container">
+                            <!-- Your original image - unchanged -->
+                            <img src="images/hero.png" alt="Hero Image" class="hero-main-image">
+                            
+                            <!-- New decorative elements added below -->
+                            <div class="dummy-image dummy-1">
+                                <div class="dummy-overlay"></div>
+                                <img src="images/hero.png" alt="" aria-hidden="true">
                             </div>
-                            <div class="hero-image" style="background-color: #4361ee;">
-                                <img src="https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Alex mentoring">
+                            <div class="dummy-image dummy-2">
+                                <div class="dummy-overlay"></div>
+                                <img src="images/hero.png" alt="" aria-hidden="true">
                             </div>
-                            <div class="hero-image" style="background-color: #f72585;">
-                                <img src="https://images.unsplash.com/photo-1547658719-da2b51169166?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1064&q=80" alt="Alex at conference">
+                            
+                            <div class="tech-circle tech-circle-1">
+                                <i class="fab fa-angular"></i>
                             </div>
-                            <div class="hero-image" style="background-color: #4cc9f0;">
-                                <img src="https://images.unsplash.com/photo-1580927752452-89d86da3fa0a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Alex coding">
+                            <div class="tech-circle tech-circle-2">
+                                <i class="fab fa-js"></i>
                             </div>
-                        </div>
-                        
-                        <!-- Navigation arrows -->
-                        <div class="hero-nav-arrow prev">
-                            <i class="fas fa-chevron-left"></i>
-                        </div>
-                        <div class="hero-nav-arrow next">
-                            <i class="fas fa-chevron-right"></i>
-                        </div>
-                        
-                        <!-- Navigation dots -->
-                        <div class="hero-nav-dots">
-                            <div class="hero-nav-dot active" data-index="0"></div>
-                            <div class="hero-nav-dot" data-index="1"></div>
-                            <div class="hero-nav-dot" data-index="2"></div>
-                            <div class="hero-nav-dot" data-index="3"></div>
+                            <div class="tech-circle tech-circle-3">
+                                <i class="fab fa-microsoft"></i>
+                            </div>
+                            
+                            <div class="connection-line line-1"></div>
+                            <div class="connection-line line-2"></div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
-     
      <!-- Marquee Scroll Section
 <section class="marquee-scroll-section">
     <h2 class="section-title" data-aos="fade-up" style="color: white;">My Work</h2>
@@ -3284,90 +3507,144 @@ function renderMarquee(items) {
 
 <script src="certifications.js"></script>
 <script>
-    document.addEventListener('DOMContentLoaded', () => {
-        const certificationsGrid = document.querySelector('.certifications-grid');
-        const categoryButtons = document.querySelectorAll('.category-btn');
+     document.addEventListener('DOMContentLoaded', () => {
+    const certificationsGrid = document.querySelector('.certifications-grid');
+    const categoryButtons = document.querySelectorAll('.category-btn');
 
-        // Function to create a certification card
-        function createCertificationCard(cert) {
-            const card = document.createElement('div');
-            card.className = 'certification-card';
-            card.setAttribute('data-category', cert.category);
+    // Function to create a certification card
+    function createCertificationCard(cert) {
+        const card = document.createElement('div');
+        card.className = 'certification-card';
+        card.setAttribute('data-category', cert.category);
 
-            card.innerHTML = `
-                <div class="certification-image-container" onclick="showImageModal('${cert.image}', '${cert.title}')">
-                    <img src="${cert.image}" alt="${cert.title} Certification" class="certification-image">
-                    <div class="image-overlay">
-                        <i class="${cert.overlayIcon}"></i>
-                    </div>
+        card.innerHTML = `
+            <div class="certification-image-container" onclick="showImageModal('${cert.image}', '${cert.title}')">
+                <img src="${cert.image}" alt="${cert.title} Certification" class="certification-image">
+                <div class="image-overlay">
+                    <i class="${cert.overlayIcon}"></i>
                 </div>
-                <div class="certification-header">
-                    <div class="certification-badge" style="${cert.badgeStyle}">
-                        <i class="${cert.badgeIcon}"></i>
-                    </div>
-                    <h3>${cert.title}</h3>
-                    <p class="issuer">${cert.issuer}</p>
+            </div>
+            <div class="certification-header">
+                <div class="certification-badge" style="${cert.badgeStyle}">
+                    <i class="${cert.badgeIcon}"></i>
                 </div>
-                <div class="certification-body">
-                    <p>${cert.description}</p>
-                    <div class="certification_skills">
-                        ${cert.skills.map(skill => `<span>${skill}</span>`).join('')}
-                    </div>
+                <h3>${cert.title}</h3>
+                <p class="issuer">${cert.issuer}</p>
+            </div>
+            <div class="certification-body">
+                <p>${cert.description}</p>
+                <div class="certification_skills">
+                    ${cert.skills.map(skill => `<span>${skill}</span>`).join('')}
                 </div>
-                <div class="certification-footer">
-                    ${cert.regNumber ? `<span class="reg-number">Reg: ${cert.regNumber}</span>`:''}
-                    <div class="verification">
-                        <i class="fas fa-shield-alt"></i>
-                        <span>Verified</span>
-                    </div>
+            </div>
+            <div class="certification-footer">
+                ${cert.regNumber ? `<span class="reg-number">Reg: ${cert.regNumber}</span>`:''}
+                <div class="verification">
+                    <i class="fas fa-shield-alt"></i>
+                    <span>Verified</span>
                 </div>
-                ${cert.ribbonText ? `<div class="certification-ribbon">${cert.ribbonText}</div>` : ''}
-            `;
+            </div>
+            ${cert.ribbonText ? `<div class="certification-ribbon">${cert.ribbonText}</div>` : ''}
+        `;
 
-            return card;
-        }
+        return card;
+    }
 
-        // Populate certifications
-        certificationsData.forEach(cert => {
+    // Create and append "Show More" button
+    const showMoreBtn = document.createElement('button');
+    showMoreBtn.className = 'btn btn-primary me-3 hvr-grow show-more-btn.expanded ';
+    showMoreBtn.textContent = 'Show More Certifications';
+    
+    // Function to show certifications with optional limit
+    function showCertifications(limit = null) {
+        // Clear the grid first
+        certificationsGrid.innerHTML = '';
+        
+        // Add certifications up to limit (or all if no limit)
+        const certsToShow = limit ? certificationsData.slice(0, limit) : certificationsData;
+        
+        certsToShow.forEach(cert => {
             const card = createCertificationCard(cert);
             certificationsGrid.appendChild(card);
         });
-
-        // Filter functionality
-        categoryButtons.forEach(button => {
-            button.addEventListener('click', () => {
-                categoryButtons.forEach(btn => btn.classList.remove('active'));
-                button.classList.add('active');
-
-                const category = button.getAttribute('data-category');
-                const cards = document.querySelectorAll('.certification-card');
-
-                cards.forEach(card => {
-                    const cardCategory = card.getAttribute('data-category');
-                    
-                    if (category === 'all' || cardCategory === category) {
-                        card.style.display = 'block';
-                        card.style.opacity = '0';
-                        card.style.transform = 'translateY(50px)';
-                        setTimeout(() => {
-                            card.style.transition = 'all 0.5s ease';
-                            card.style.opacity = '1';
-                            card.style.transform = 'translateY(0)';
-                        }, 10);
-                    } else {
-                        card.style.transition = 'all 0.5s ease';
-                        card.style.opacity = '0';
-                        card.style.transform = 'translateY(50px)';
-                        setTimeout(() => {
-                            card.style.display = 'none';
-                        }, 500);
-                    }
-                });
-            });
-        });
-         
+        
+        // Only add the "Show More" button if we're limiting and there are more to show
+        if (limit && certificationsData.length > limit) {
+            certificationsGrid.appendChild(showMoreBtn);
+        }
+    }
+    
+    // Initially show only 3 certifications
+    showCertifications(3);
+    
+    // "Show More" button click handler
+    showMoreBtn.addEventListener('click', () => {
+        showCertifications(); // Show all certifications
     });
-    function showImageModal(src, title) {
+
+    // Filter functionality
+    categoryButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            categoryButtons.forEach(btn => btn.classList.remove('active'));
+            button.classList.add('active');
+
+            const category = button.getAttribute('data-category');
+            const cards = document.querySelectorAll('.certification-card');
+
+            cards.forEach(card => {
+                const cardCategory = card.getAttribute('data-category');
+                
+                if (category === 'all' || cardCategory === category) {
+                    card.style.display = 'block';
+                    card.style.opacity = '0';
+                    card.style.transform = 'translateY(50px)';
+                    setTimeout(() => {
+                        card.style.transition = 'all 0.5s ease';
+                        card.style.opacity = '1';
+                        card.style.transform = 'translateY(0)';
+                    }, 10);
+                } else {
+                    card.style.transition = 'all 0.5s ease';
+                    card.style.opacity = '0';
+                    card.style.transform = 'translateY(50px)';
+                    setTimeout(() => {
+                        card.style.display = 'none';
+                    }, 500);
+                }
+            });
+            
+            // After filtering, check if we need to show the "Show More" button
+            if (category === 'all') {
+                const visibleCards = document.querySelectorAll('.certification-card[style*="display: block"], .certification-card:not([style*="display: none"])');
+                if (visibleCards.length > 3) {
+                    // Remove any existing button first
+                    const existingBtn = document.querySelector('.show-more-btn');
+                    if (existingBtn) existingBtn.remove();
+                    
+                    // Hide cards beyond the first 3
+                    visibleCards.forEach((card, index) => {
+                        if (index >= 3) {
+                            card.style.display = 'none';
+                        }
+                    });
+                    
+                    // Add the "Show More" button
+                    certificationsGrid.appendChild(showMoreBtn);
+                    
+                    // Update the button click handler to show all cards in this category
+                    showMoreBtn.onclick = () => {
+                        visibleCards.forEach(card => {
+                            card.style.display = 'block';
+                        });
+                        showMoreBtn.remove();
+                    };
+                }
+            }
+        });
+    });
+});
+
+function showImageModal(src, title) {
     const modal = document.getElementById("imageModal");
     const modalImg = document.getElementById("modalImage");
     const captionText = document.getElementById("caption");
@@ -3382,3 +3659,5 @@ function closeImageModal() {
 }
 
 </script>
+
+
