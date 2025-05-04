@@ -1,7 +1,18 @@
 // All project data embedded directly in this file
 const portfolioData = {
     "projects": [
-         
+        {
+            "id": 1,
+            "title": "Hostel Management System ",
+            "description": "Hostel Management System is a web-based platform designed to simplify room allotment, fee tracking, and communication between students and hostel owners, ensuring efficient and organized hostel operations.",
+            "image":  "images/project/hms/hms (14).png",
+            "categories": ["fullstack"],
+           "technologies": ["Bootstrap", ".NET", "Sql Server", "MVC"],
+            "links": {
+               "demo": "projectDetails.html?id=hms",
+               "code": ""
+            }
+        },
         {
             "id": 2,
             "title": "Admin Dashboard",
@@ -11,7 +22,7 @@ const portfolioData = {
             "technologies": ["Angular", "NgRx", "Chart.js", "Bootstrap"],
             "links": {
                "demo": "projectDetails.html?id=ecommerce-dashboard1",
-               "code": "https://github.com/yourusername/ecommerce-platform"
+               "code": ""
             }
         },
         {
@@ -20,7 +31,7 @@ const portfolioData = {
             "description": "Sales Monitoring System is a real-time web application that tracks and analyzes daily sales, offering insights into product performance, trends, and revenue to support quick, data-driven decisions.",
             "image": "images/project/SalesMonitoringSystem/Capture.png",
             "categories": ["fullstack", "dotnet"],
-            "technologies": ["Angular", ".NET Core", "Sql Server", "MVC"],
+            "technologies": ["Bootstrap", ".NET Core", "Sql Server", "MVC"],
             "links": {
                  "demo": "projectDetails.html?id=SalesMonitoringSystem",
                "code": ""

@@ -325,6 +325,157 @@ const projectsData = {
                 solution: "Implemented secure authentication and authorization using JWT tokens and HTTPS protocols to protect sensitive data." 
             }
         ]
+    },
+    'hms': {
+        header: {
+            title: "Hostel Management System",
+            subtitle: "The Hostel Management System is a comprehensive web-based platform built to streamline the operations of hostel accommodations for both owners and students. It enables efficient management of hostel facilities, room allocations, student records, bookings, and payments from a centralized interface.",
+            links: [
+                // { class: "github-link", href: "https://github.com/yourusername/ecommerce-dashboard", icon: "fab fa-github", text: "Source Code" },
+                // { class: "demo-link", href: "#", icon: "fas fa-play", text: "Interactive Demo", id: "demo-btn" },
+                // { class: "case-study-link", href: "#", icon: "fas fa-book-open", text: "Case Study", id: "case-study-btn" }
+            ]
+        },
+        gallery: [
+            {
+                type: "image",
+                src: "images/project/hms/hms (1).png",
+                caption: "",
+                github: "https://github.com/IhtishamUl-haq/hostelmanagmentsystem"
+            },
+            
+            {
+                type: "image",
+                src: "images/project/hms/hms (3).png",
+                caption: "",
+                github: "https://github.com/IhtishamUl-haq/hostelmanagmentsystem"
+            },
+            {
+                type: "image",
+                src: "images/project/hms/hms (4).png",
+                caption: "",
+                github: "https://github.com/IhtishamUl-haq/hostelmanagmentsystem"
+            },
+            {
+                type: "image",
+                src: "images/project/hms/hms (5).png",
+                caption: "",
+                github: "https://github.com/IhtishamUl-haq/hostelmanagmentsystem"
+            },
+            {
+                type: "image",
+                src: "images/project/hms/hms (6).png",
+                caption: "",
+                github: "https://github.com/IhtishamUl-haq/hostelmanagmentsystem"
+            },
+            {
+                type: "image",
+                src: "images/project/hms/hms (7).png",
+                caption: "",
+                github: "https://github.com/IhtishamUl-haq/hostelmanagmentsystem"
+            },
+            {
+                type: "image",
+                src: "images/project/hms/hms (8).png",
+                caption: "",
+                github: "https://github.com/IhtishamUl-haq/hostelmanagmentsystem"
+            },
+            {
+                type: "image",
+                src: "images/project/hms/hms (10).png",
+                caption: "",
+                github: "https://github.com/IhtishamUl-haq/hostelmanagmentsystem"
+            },
+            {
+                type: "image",
+                src: "images/project/hms/hms (11).png",
+                caption: "",
+                github: "https://github.com/IhtishamUl-haq/hostelmanagmentsystem"
+            },
+            {
+                type: "image",
+                src: "images/project/hms/hms (12).png",
+                caption: "",
+                github: "https://github.com/IhtishamUl-haq/hostelmanagmentsystem"
+            },
+            {
+                type: "image",
+                src: "images/project/hms/hms (13).png",
+                caption: "",
+                github: "https://github.com/IhtishamUl-haq/hostelmanagmentsystem"
+            },
+            {
+                type: "image",
+                src: "images/project/hms/hms (14).png",
+                caption: "",
+                github: "https://github.com/IhtishamUl-haq/hostelmanagmentsystem"
+            },
+            {
+                type: "image",
+                src: "images/project/hms/hms (6).png",
+                caption: "",
+                github: "https://github.com/IhtishamUl-haq/hostelmanagmentsystem"
+            },
+            
+            // {
+            //     type: "video",
+            //     videoSrc: "https://sample-videos.com/video321/mp4/720/big_buck_bunny_720p_1mb.mp4",
+            //     thumbnail: "https://images.unsplash.com/photo-1526628953301-3e589a6a8b74?ixlib=rb-4.0.3&auto=format&fit=crop&w=1130&q=80",
+            //     caption: "Explosive Intro Video",
+            //     github: "https://github.com/yourusername/intro-video"
+            // }
+        ],
+        technology: ["HTML5", "CSS3", "Bootstrap 5", "MVC", , "C#", ".NET", "Entity Framework", "SQL Server"]
+        ,
+        features : [
+            "Allows hostel owners to add and manage multiple hostels with details like name, address, facilities, and images.",
+            "Enables the creation and categorization of rooms by type (e.g., single, double, triple occupancy) with pricing and availability.",
+            "Tracks room status in real time, including available, booked, and under maintenance.",
+            "Maintains student records with personal details, contact information, ID proof, and guardian info.",
+            "Supports a complete booking system where students can search hostels, view available rooms, and request bookings.",
+            "Prevents overbooking by dynamically updating room availability based on confirmed bookings.",
+            "Allows hostel owners to approve, reject, and manage student bookings from a centralized panel.",
+            "Handles payment management including rent, booking fees, and additional charges with receipt generation.",
+            "Displays a real-time admin dashboard showing total rooms, occupancy, active students, and monthly revenue.",
+             
+        ]
+        ,
+        
+        challenges: [ 
+            { 
+                title: "Hostel and Room Structuring", 
+                solution: "Designed a scalable database schema to efficiently manage multiple hostels, room types, and availability status." 
+            },
+            { 
+                title: "Real-Time Room Availability", 
+                solution: "Implemented SignalR to reflect real-time room booking and availability status without requiring page refresh." 
+            },
+            { 
+                title: "Booking Management", 
+                solution: "Handled overlapping booking requests and ensured accurate room allocation through backend validation." 
+            },
+            { 
+                title: "Student Information Handling", 
+                solution: "Developed secure modules to collect and manage detailed student records with data validation and privacy protection." 
+            },
+            { 
+                title: "Payment Integration", 
+                solution: "Integrated payment tracking and receipt generation to manage booking fees, rent, and additional charges effectively." 
+            },
+            { 
+                title: "Admin Dashboard Reporting", 
+                solution: "Built an intuitive dashboard with dynamic charts and metrics to help hostel owners monitor bookings, payments, and occupancy." 
+            },
+            { 
+                title: "Role & Access Control", 
+                solution: "Implemented RBAC to restrict and define access for admins, hostel managers, and students using token-based authentication." 
+            },
+            { 
+                title: "Notification and Reminder System", 
+                solution: "Added automated reminders for pending payments and booking confirmations to enhance user communication." 
+            }
+        ]
+        
     }
 };
 
