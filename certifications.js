@@ -2,6 +2,19 @@
 const certificationsData = [
     {
         category: "web",
+        image: "images/certification/bootcamp.PNG",
+        overlayIcon: "fas fa-code",
+        badgeStyle: "background: var(--accent-color)",
+        badgeIcon: "fas fa-code",
+        title: "Technical Training",
+        issuer: "TechLift | 2023",
+        description: "Covered essential skills in Object-Oriented Programming (OOP), ASP.NET Core MVC, ASP.NET Web APIs, Entity Framework, Identity, LINQ, and SQL Server",
+        skills: ["Boostrap","javascrift","sql server",'C#','Dot Net Core','oop'],
+        regNumber: null,
+        ribbonText: null
+    },
+    {
+        category: "web",
         image: "images/certification/oop.jpg",
         overlayIcon: "fas fa-code",
         badgeStyle: "background: var(--gradient)",
@@ -65,4 +78,5 @@ const certificationsData = [
         regNumber: null,
         ribbonText: null
     }
+
 ];
