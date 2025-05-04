@@ -2,162 +2,328 @@
 
 // Multiple projects data
 const projectsData = {
-    'ecommerce-dashboard1': {
+ 'flight': {
         header: {
-            title: "E-Commerce Analytics Dashboard",
-            subtitle: "An electrifying platform fusing real-time analytics, AI-driven insights, and mesmerizing visuals to redefine e-commerce mastery.",
+            title: "Flight Booking",
+            subtitle: "This is a simple flight booking system that allows users to search for available flights and book them with ease. The system provides a user-friendly interface to view flight details, check availability, and complete bookings efficiently.",
             links: [
-                { class: "github-link", href: "https://github.com/yourusername/ecommerce-dashboard", icon: "fab fa-github", text: "Source Code" },
-                { class: "demo-link", href: "#", icon: "fas fa-play", text: "Interactive Demo", id: "demo-btn" },
-                { class: "case-study-link", href: "#", icon: "fas fa-book-open", text: "Case Study", id: "case-study-btn" }
+                // { class: "github-link", href: "https://github.com/yourusername/ecommerce-dashboard", icon: "fab fa-github", text: "Source Code" },
+                // { class: "demo-link", href: "#", icon: "fas fa-play", text: "Interactive Demo", id: "demo-btn" },
+                // { class: "case-study-link", href: "#", icon: "fas fa-book-open", text: "Case Study", id: "case-study-btn" }
             ]
         },
         gallery: [
             {
                 type: "image",
-                src: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80",
-                caption: "Pulse-Pounding KPI Dashboard",
-                github: "https://github.com/yourusername/dashboard-kpi"
+                src: "images/project/Flight/flight(1).png",
+                caption: "",
+                github: "https://github.com/IhtishamUl-haq/Flight"
             },
             {
                 type: "image",
-                src: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1115&q=80",
-                caption: "Thrilling Sales Insights",
-                github: "https://github.com/yourusername/sales-analytics"
-            },
-            {
-                type: "video",
-                videoSrc: "https://sample-videos.com/video321/mp4/720/big_buck_bunny_720p_1mb.mp4",
-                thumbnail: "https://images.unsplash.com/photo-1526628953301-3e589a6a8b74?ixlib=rb-4.0.3&auto=format&fit=crop&w=1130&q=80",
-                caption: "Explosive Intro Video",
-                github: "https://github.com/yourusername/intro-video"
+                src: "images/project/Flight/flight(2).png",
+                caption: "",
+                github: "https://github.com/IhtishamUl-haq/Flight"
+            }, {
+                type: "image",
+                src: "images/project/Flight/flight(3).png",
+                caption: "",
+                github: "https://github.com/IhtishamUl-haq/Flight"
+            }, {
+                type: "image",
+                src: "images/project/Flight/flight(4).png",
+                caption: "",
+                github: "https://github.com/IhtishamUl-haq/Flight"
             },
             {
                 type: "image",
-                src: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80",
-                caption: "Pulse-Pounding KPI Dashboard",
-                github: "https://github.com/yourusername/dashboard-kpi"
+                src: "images/project/Flight/flight(5).png",
+                caption: "",
+                github: "https://github.com/IhtishamUl-haq/Flight"
             },
-            {
-                type: "image",
-                src: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1115&q=80",
-                caption: "Thrilling Sales Insights",
-                github: "https://github.com/yourusername/sales-analytics"
-            },
-            {
-                type: "video",
-                videoSrc: "https://sample-videos.com/video321/mp4/720/big_buck_bunny_720p_1mb.mp4",
-                thumbnail: "https://images.unsplash.com/photo-1526628953301-3e589a6a8b74?ixlib=rb-4.0.3&auto=format&fit=crop&w=1130&q=80",
-                caption: "Explosive Intro Video",
-                github: "https://github.com/yourusername/intro-video"
-            },
-            {
-                type: "image",
-                src: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80",
-                caption: "Pulse-Pounding KPI Dashboard",
-                github: "https://github.com/yourusername/dashboard-kpi"
-            },
-            {
-                type: "image",
-                src: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1115&q=80",
-                caption: "Thrilling Sales Insights",
-                github: "https://github.com/yourusername/sales-analytics"
-            },
-            {
-                type: "video",
-                videoSrc: "https://sample-videos.com/video321/mp4/720/big_buck_bunny_720p_1mb.mp4",
-                thumbnail: "https://images.unsplash.com/photo-1526628953301-3e589a6a8b74?ixlib=rb-4.0.3&auto=format&fit=crop&w=1130&q=80",
-                caption: "Explosive Intro Video",
-                github: "https://github.com/yourusername/intro-video"
-            },
-            {
-                type: "image",
-                src: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80",
-                caption: "Pulse-Pounding KPI Dashboard",
-                github: "https://github.com/yourusername/dashboard-kpi"
-            },
-            {
-                type: "image",
-                src: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1115&q=80",
-                caption: "Thrilling Sales Insights",
-                github: "https://github.com/yourusername/sales-analytics"
-            },
-            {
-                type: "video",
-                videoSrc: "https://sample-videos.com/video321/mp4/720/big_buck_bunny_720p_1mb.mp4",
-                thumbnail: "https://images.unsplash.com/photo-1526628953301-3e589a6a8b74?ixlib=rb-4.0.3&auto=format&fit=crop&w=1130&q=80",
-                caption: "Explosive Intro Video",
-                github: "https://github.com/yourusername/intro-video"
-            }
+            // {
+            //     type: "video",
+            //     videoSrc: "https://sample-videos.com/video321/mp4/720/big_buck_bunny_720p_1mb.mp4",
+            //     thumbnail: "https://images.unsplash.com/photo-1526628953301-3e589a6a8b74?ixlib=rb-4.0.3&auto=format&fit=crop&w=1130&q=80",
+            //     caption: "Explosive Intro Video",
+            //     github: "https://github.com/yourusername/intro-video"
+            // }
         ],
-        technology: ["React 18", "TypeScript", "D3.js", "Node.js", "Express", "MongoDB"],
+        technology: ["HTML5", "CSS3", "Bootstrap 5", "Angular 15", "TypeScript", "C#", ".NET Core", "Entity Framework Core", "SQL Server"]
+        ,
         features: [
-            "Real-time sales tracking",
-            "AI-driven customer segmentation",
-            "Automated inventory management"
+            "Flight search with filters (destination, date, etc.)",
+            "User-friendly flight booking process",
+            "Real-time flight availability updates",
+            
         ],
         challenges: [
-            { title: "Real-time Data", solution: "WebSocket for seamless updates." },
-            { title: "Performance", solution: "Virtual scrolling & aggregation." }
+            { title: "Data Consistency",solution: "Implemented transactional operations with Entity Framework Core." },
+            { title: "Scalability", solution: "Designed RESTful APIs with .NET Core and optimized SQL queries." },
+            { title: "Responsive Design", solution: "Used Bootstrap 5 and Angular components for mobile-friendly UI." },
         ]
     },
-    'portfolio-website': {
+    'blog': {
         header: {
-            title: "Portfolio Website",
-            subtitle: "A dynamic showcase of projects with stunning animations and responsive design.",
+            title: "Blog",
+            subtitle: "This blog project allows users to create and share their own blog posts. Users can easily add a new blog by providing a title, content, and optional image. It's a simple and user-friendly platform for expressing ideas, sharing knowledge, and connecting with others through writing.",
             links: [
-                { class: "github-link", href: "https://github.com/yourusername/portfolio-website", icon: "fab fa-github", text: "Source Code" },
-                { class: "demo-link", href: "#", icon: "fas fa-play", text: "Live Demo", id: "demo-btn" },
-                { class: "case-study-link", href: "#", icon: "fas fa-book-open", text: "Case Study", id: "case-study-btn" }
+                // { class: "github-link", href: "https://github.com/yourusername/ecommerce-dashboard", icon: "fab fa-github", text: "Source Code" },
+                // { class: "demo-link", href: "#", icon: "fas fa-play", text: "Interactive Demo", id: "demo-btn" },
+                // { class: "case-study-link", href: "#", icon: "fas fa-book-open", text: "Case Study", id: "case-study-btn" }
             ]
         },
         gallery: [
             {
                 type: "image",
-                src: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80",
-                caption: "Landing Page",
-                github: "https://github.com/yourusername/portfolio-landing"
+                src: "images/project/Blog/blog (1).png",
+                caption: "",
+                github: "https://github.com/IhtishamUl-haq/Blog"
             },
             {
                 type: "image",
-                src: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80",
-                caption: "Project Showcase",
-                github: "https://github.com/yourusername/portfolio-showcase"
+                src: "images/project/Blog/blog (2).png",
+                caption: "",
+                github: "https://github.com/IhtishamUl-haq/Blog"
+            }, {
+                type: "image",
+                src: "images/project/Blog/blog (3).png",
+                caption: "",
+                github: "https://github.com/IhtishamUl-haq/Blog"
+            }, {
+                type: "image",
+                src: "images/project/Blog/blog (4).png",
+                caption: "",
+                github: "https://github.com/IhtishamUl-haq/Blog"
             },
             {
                 type: "image",
-                src: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80",
-                caption: "Landing Page",
-                github: "https://github.com/yourusername/portfolio-landing"
+                src: "images/project/Blog/blog (5).png",
+                caption: "",
+                github: "https://github.com/IhtishamUl-haq/Blog"
             },
             {
                 type: "image",
-                src: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80",
-                caption: "Project Showcase",
-                github: "https://github.com/yourusername/portfolio-showcase"
+                src: "images/project/Blog/blog (6).png",
+                caption: "",
+                github: "https://github.com/IhtishamUl-haq/Blog"
             },
             {
                 type: "image",
-                src: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80",
-                caption: "Landing Page",
-                github: "https://github.com/yourusername/portfolio-landing"
+                src: "images/project/Blog/blog (7).png",
+                caption: "",
+                github: "https://github.com/IhtishamUl-haq/Blog"
             },
-            {
-                type: "image",
-                src: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80",
-                caption: "Project Showcase",
-                github: "https://github.com/yourusername/portfolio-showcase"
-            }
+            // {
+            //     type: "video",
+            //     videoSrc: "https://sample-videos.com/video321/mp4/720/big_buck_bunny_720p_1mb.mp4",
+            //     thumbnail: "https://images.unsplash.com/photo-1526628953301-3e589a6a8b74?ixlib=rb-4.0.3&auto=format&fit=crop&w=1130&q=80",
+            //     caption: "Explosive Intro Video",
+            //     github: "https://github.com/yourusername/intro-video"
+            // }
         ],
-        technology: ["HTML5", "CSS3", "JavaScript", "GSAP", "jQuery"],
+        technology: ["HTML5", "CSS3", "Bootstrap 5", "Angular 15", "TypeScript", "C#", ".NET Core", "Entity Framework Core", "SQL Server"]
+        ,
         features: [
-            "Smooth scroll animations",
-            "Responsive layout",
-            "Interactive galleries"
+            "User can create and publish blog posts with title, content, and images",
+            "Edit and update existing blog posts easily",
+            "Clean and responsive user interface for a smooth blogging experience",
+            "Role-based access control for managing user permissions (e.g., Admin, Editor, Viewer)",
         ],
+        
         challenges: [
-            { title: "Animation Performance", solution: "Optimized with GSAP." },
-            { title: "Cross-browser Support", solution: "CSS prefixes and fallbacks." }
+            { title: "Content Management", solution: "Implemented CRUD operations using .NET Core and Entity Framework." },
+            { title: "User Experience", solution: "Designed a clean UI using Angular and Bootstrap for better readability." },
+            { title: "Image Handling", solution: "Integrated image upload and preview features with proper validation." },
+            { title: "Role & Rights Management", solution: "Developed a flexible RBAC system with dynamic permission assignment in both backend (.NET Core) and frontend (Angular)." },
+        ]
+    }
+    ,
+    'chat': {
+        header: {
+            title: "Chat",
+            subtitle: "This is a full-featured real-time chat application developed using ASP.NET Core, SignalR, and SQL Server. The system is designed to offer a seamless messaging experience with support for user-to-user chat, group conversations, and role-based control within chat groups",
+            links: [
+                // { class: "github-link", href: "https://github.com/yourusername/ecommerce-dashboard", icon: "fab fa-github", text: "Source Code" },
+                // { class: "demo-link", href: "#", icon: "fas fa-play", text: "Interactive Demo", id: "demo-btn" },
+                // { class: "case-study-link", href: "#", icon: "fas fa-book-open", text: "Case Study", id: "case-study-btn" }
+            ]
+        },
+        gallery: [
+            {
+                type: "image",
+                src: "images/project/Chat/chat1.png",
+                caption: "",
+                github: ""
+            },
+            {
+                type: "image",
+                src: "images/project/Chat/chat2.png",
+                caption: "",
+                github: ""
+            },{
+                type: "image",
+                src: "images/project/Chat/chat2.png",
+                caption: "",
+                github: ""
+            },
+            // {
+            //     type: "video",
+            //     videoSrc: "https://sample-videos.com/video321/mp4/720/big_buck_bunny_720p_1mb.mp4",
+            //     thumbnail: "https://images.unsplash.com/photo-1526628953301-3e589a6a8b74?ixlib=rb-4.0.3&auto=format&fit=crop&w=1130&q=80",
+            //     caption: "Explosive Intro Video",
+            //     github: "https://github.com/yourusername/intro-video"
+            // }
+        ],
+        technology: ["HTML5", "CSS3", "Bootstrap 5", "MVC", "SignalR", "C#", ".NET Core", "Entity Framework Core", "SQL Server"]
+        ,
+        features: [
+            "Allows secure and instant communication between individual users with real-time message delivery using SignalR.",
+            "Users can create chat groups and invite others to participate. Each group maintains its own thread of conversations, and messages are broadcast to all group members in real time.",
+            "The creator of a group is automatically assigned as the group admin. Admins can manage group members, remove users, and control group settings, giving them full authority over the group chat environment",
+            "Users can be mentioned within group messages using @username format. Mentioned users receive a separate notification for better visibility",
+             ,"Real-time typing indicators and online/offline user statuses improve user engagement and mimic modern chat app experiences."       
+        ],
+        
+        challenges: [ 
+            { 
+                title: "Real-Time Communication", 
+                solution: "Integrated SignalR with .NET Core to enable real-time messaging between users and within groups." 
+            },
+            { 
+                title: "User-to-User Messaging", 
+                solution: "Handled one-on-one private conversations with persistent message storage and user connection tracking." 
+            },
+            { 
+                title: "Group Management", 
+                solution: "Implemented group creation, user invitations, and chat broadcasting using SignalR groups." 
+            },
+            { 
+                title: "Group Admin Controls", 
+                solution: "Developed admin privileges allowing group owners to manage members, including removing users and editing group info." 
+            },
+            { 
+                title: "Database Structure", 
+                solution: "Designed normalized SQL Server schema to manage users, messages, group memberships, and chat history efficiently." 
+            },
+            { 
+                title: "Connection Management", 
+                solution: "Maintained active user connections and ensured delivery of messages even when users reconnect." 
+            },
+            { 
+                title: "Mention & Notification System", 
+                solution: "Implemented user mentions with `@username` recognition and triggered real-time notifications." 
+            },
+            { 
+                title: "Security & Access Control", 
+                solution: "Secured chat endpoints and group access using token-based authentication and user-role validation." 
+            }
+        ]
+    },
+    'salesmonitoringsystem': {
+        header: {
+            title: "Sales Monitoring System",
+            subtitle: "The Sales Monitoring System is a powerful, web-based application built to streamline the tracking and analysis of business performance through real-time sales data and user activity. Designed with scalability and usability in mind, the system provides a comprehensive set of features for administrators and stakeholders to make informed, data-driven decisions.",
+            links: [
+                // { class: "github-link", href: "https://github.com/yourusername/ecommerce-dashboard", icon: "fab fa-github", text: "Source Code" },
+                // { class: "demo-link", href: "#", icon: "fas fa-play", text: "Interactive Demo", id: "demo-btn" },
+                // { class: "case-study-link", href: "#", icon: "fas fa-book-open", text: "Case Study", id: "case-study-btn" }
+            ]
+        },
+        gallery: [
+            {
+                type: "image",
+                src: "images/project/SalesMonitoringSystem/Capture.png",
+                caption: "",
+                github: ""
+            },
+            {
+                type: "image",
+                src: "images/project/SalesMonitoringSystem/Capture2.png",
+                caption: "",
+                github: ""
+            },
+            {
+                type: "image",
+                src: "images/project/SalesMonitoringSystem/Capture3.png",
+                caption: "",
+                github: ""
+            },
+            {
+                type: "image",
+                src: "images/project/SalesMonitoringSystem/Capture4.png",
+                caption: "",
+                github: ""
+            },
+            {
+                type: "image",
+                src: "images/project/SalesMonitoringSystem/Capture5.png",
+                caption: "",
+                github: ""
+            },
+            {
+                type: "image",
+                src: "images/project/SalesMonitoringSystem/Capture6.png",
+                caption: "",
+                github: ""
+            },
+            // {
+            //     type: "video",
+            //     videoSrc: "https://sample-videos.com/video321/mp4/720/big_buck_bunny_720p_1mb.mp4",
+            //     thumbnail: "https://images.unsplash.com/photo-1526628953301-3e589a6a8b74?ixlib=rb-4.0.3&auto=format&fit=crop&w=1130&q=80",
+            //     caption: "Explosive Intro Video",
+            //     github: "https://github.com/yourusername/intro-video"
+            // }
+        ],
+        technology: ["HTML5", "CSS3", "Bootstrap 5", "MVC", , "C#", ".NET Core", "Entity Framework Core", "SQL Server"]
+        ,
+        features: [
+            "Tracks daily, weekly, and monthly sales transactions with real-time updates.",
+            "Monitors performance metrics by product, sales agent, or region for better decision-making.",
+            "Logs and tracks user activities across the system, including login history and action logs.",
+            "Displays active users and their real-time activity to enhance transparency and control.",
+            "Synchronizes data in real time using SignalR (or similar), ensuring instant updates across the dashboard.",
+            "Provides a centralized admin dashboard with KPIs, graphs, and key performance summaries.",
+            "Enables filtering, exporting, and scheduling of detailed sales reports for analysis.",
+            "Supports role-based access control, allowing the admin to assign roles and manage user permissions.",
+            "Highlights top-performing products, sales reps, and regions using interactive charts.",
+            "Identifies anomalies or suspicious behavior through user monitoring features and activity logs."
+        ]
+        ,
+        
+        challenges:[ 
+            { 
+                title: "Real-Time Data Updates", 
+                solution: "Implemented SignalR to push real-time updates for sales transactions and user activity to all connected clients." 
+            },
+            { 
+                title: "Sales Data Aggregation", 
+                solution: "Designed optimized SQL queries to aggregate and filter sales data across various dimensions like date, region, and product." 
+            },
+            { 
+                title: "User Activity Tracking", 
+                solution: "Developed a monitoring system to log and display user actions, login times, and session durations." 
+            },
+            { 
+                title: "Admin Dashboard Visualization", 
+                solution: "Built interactive charts and summary cards to visualize sales KPIs using chart libraries and custom components." 
+            },
+            { 
+                title: "Role-Based Access Control", 
+                solution: "Integrated a flexible RBAC system to manage permissions and access rights for different types of users." 
+            },
+            { 
+                title: "System Performance", 
+                solution: "Optimized backend API performance and ensured scalability to handle large volumes of sales and user data." 
+            },
+            { 
+                title: "Data Consistency", 
+                solution: "Ensured synchronization between frontend views and backend data sources to reflect real-time changes accurately." 
+            },
+            { 
+                title: "Security & Data Privacy", 
+                solution: "Implemented secure authentication and authorization using JWT tokens and HTTPS protocols to protect sensitive data." 
+            }
         ]
     }
 };
@@ -296,14 +462,14 @@ function setupAnimations() {
         delay: 0.9
     });
 
-    gsap.from('.project-links .action-btn', {
-        opacity: 0,
-        y: 50,
-        stagger: 0.25,
-        duration: 1.5,
-        ease: 'back.out(1.7)',
-        delay: 1.3
-    });
+    // gsap.from('.project-links .action-btn', {
+    //     opacity: 0,
+    //     y: 50,
+    //     stagger: 0.25,
+    //     duration: 1.5,
+    //     ease: 'back.out(1.7)',
+    //     delay: 1.3
+    // });
 
     $('.gallery-item').each(function(i) {
         gsap.from(this, {

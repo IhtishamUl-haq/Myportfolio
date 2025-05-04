@@ -1,18 +1,7 @@
 // All project data embedded directly in this file
 const portfolioData = {
     "projects": [
-        {
-            "id": 1,
-            "title": "E-Commerce Platform",
-            "description": "Full-featured online store with product management, cart, checkout system, and admin dashboard.",
-            "image": "https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
-            "categories": ["fullstack", "angular", "dotnet"],
-            "technologies": ["Angular", ".NET Core", "SQL Server", "Stripe API"],
-            "links": {
-                "demo": "projectDetails.html?id=ecommerce-dashboard1",
-               "code": "https://github.com/yourusername/ecommerce-platform"
-            }
-        },
+         
         {
             "id": 2,
             "title": "Admin Dashboard",
@@ -26,51 +15,51 @@ const portfolioData = {
             }
         },
         {
-            "id": 3,
-            "title": "Inventory Management API",
-            "description": "RESTful API for inventory management system with role-based access and real-time updates.",
-            "image": "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
-            "categories": ["dotnet"],
-            "technologies": [".NET Core", "Entity Framework", "JWT Auth", "Swagger"],
-            "links": {
-                 "demo": "projectDetails.html?id=ecommerce-dashboard1",
-               "code": "https://github.com/yourusername/ecommerce-platform"
-            }
-        },
-        {
             "id": 4,
-            "title": "Healthcare Portal",
-            "description": "Patient management system for healthcare providers with appointment scheduling and telemedicine features.",
-            "image": "https://images.unsplash.com/photo-1579684385127-1ef15d508118?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
-            "categories": ["fullstack", "angular", "dotnet"],
-            "technologies": ["Angular", ".NET Core", "Azure", "SignalR"],
+            "title": "Sales Monitoring System ",
+            "description": "Sales Monitoring System is a real-time web application that tracks and analyzes daily sales, offering insights into product performance, trends, and revenue to support quick, data-driven decisions.",
+            "image": "images/project/SalesMonitoringSystem/Capture.png",
+            "categories": ["fullstack", "dotnet"],
+            "technologies": ["Angular", ".NET Core", "Sql Server", "MVC"],
             "links": {
-                 "demo": "projectDetails.html?id=portfolio-website",
-               "code": "https://github.com/yourusername/ecommerce-platform"
+                 "demo": "projectDetails.html?id=SalesMonitoringSystem",
+               "code": ""
             }
         },
         {
             "id": 5,
             "title": "Task Management App",
-            "description": "Kanban-style task management application with drag-and-drop functionality and team collaboration.",
-            "image": "https://images.unsplash.com/photo-1481487196290-c152efe083f5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1162&q=80",
-            "categories": ["angular"],
-            "technologies": ["Angular", "Firebase", "Drag & Drop", "Material UI"],
+            "description": "A real-timechat application enabling instant, seamless communication between users with a smooth and responsive interface.",
+            "image": "images/project/Chat/chat1.png",
+            "categories": ["fullstack"],
+            "technologies": ["MVC", "Dot Net core", "SignalR", "Sql server"],
             "links": {
-                 "demo": "projectDetails.html?id=portfolio-website",
-               "code": "https://github.com/yourusername/ecommerce-platform"
+                 "demo": "projectDetails.html?id=chat",
+               "code": ""
             }
         },
         {
             "id": 6,
-            "title": "Payment Processing Service",
-            "description": "Microservice for handling payment transactions with multiple gateway support and fraud detection.",
-            "image": "https://images.unsplash.com/photo-1604594849809-dfedbc827105?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
-            "categories": ["dotnet"],
-            "technologies": [".NET Core", "RabbitMQ", "Docker", "Redis"],
+            "title": "Blog",
+            "description": "A simple platform where users can add and share their own blog posts.",
+            "image": "images/project/Blog/blog (1).png",
+            "categories": ["fullstack", "angular", "dotnet"],
+            "technologies": [".NET Core", "Angular", "Sql Server", "Restful Api"],
             "links": {
-                 "demo": "projectDetails.html?id=portfolio-website",
-               "code": "https://github.com/yourusername/ecommerce-platform"
+                 "demo": "projectDetails.html?id=blog",
+               "code": "https://github.com/IhtishamUl-haq/Blog"
+            }
+        },
+        {
+            "id": 7,
+            "title": "Flight Booking System",
+            "description": "It's a simple flight booking system used to book flights.",
+            "image": "images/project/Flight/flight(1).png",
+            "categories": ["fullstack", "angular", "dotnet"],
+            "technologies": ["HTML5", "CSS3", "Bootstrap 5", "Angular 15", "TypeScript", "C#", ".NET Core", "Entity Framework Core", "SQL Server"],
+            "links": {
+                 "demo": "projectDetails.html?id=Flight",
+                  "code": "https://github.com/IhtishamUl-haq/Flight"
             }
         }
     ]
