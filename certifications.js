@@ -2,7 +2,7 @@
 const certificationsData = [
     {
         category: "web",
-        image: "images/certification/bootcamp.PNG",
+        image: "images/certification/bootcamp.png",
         overlayIcon: "fas fa-code",
         badgeStyle: "background: var(--accent-color)",
         badgeIcon: "fas fa-code",
