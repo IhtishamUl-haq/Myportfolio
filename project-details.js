@@ -76,41 +76,41 @@ const projectsData = {
         gallery: [
             {
                 type: "image",
-                src: "images/project/Blog/blog (1).png",
+                src: "images/project/blog/blog (1).png",
                 caption: "",
                 github: "https://github.com/IhtishamUl-haq/Blog"
             },
             {
                 type: "image",
-                src: "images/project/Blog/blog (2).png",
+                src: "images/project/blog/blog (2).png",
                 caption: "",
                 github: "https://github.com/IhtishamUl-haq/Blog"
             }, {
                 type: "image",
-                src: "images/project/Blog/blog (3).png",
+                src: "images/project/blog/blog (3).png",
                 caption: "",
                 github: "https://github.com/IhtishamUl-haq/Blog"
             }, {
                 type: "image",
-                src: "images/project/Blog/blog (4).png",
+                src: "images/project/blog/blog (4).png",
                 caption: "",
                 github: "https://github.com/IhtishamUl-haq/Blog"
             },
             {
                 type: "image",
-                src: "images/project/Blog/blog (5).png",
+                src: "images/project/blog/blog (5).png",
                 caption: "",
                 github: "https://github.com/IhtishamUl-haq/Blog"
             },
             {
                 type: "image",
-                src: "images/project/Blog/blog (6).png",
+                src: "images/project/blog/blog (6).png",
                 caption: "",
                 github: "https://github.com/IhtishamUl-haq/Blog"
             },
             {
                 type: "image",
-                src: "images/project/Blog/blog (7).png",
+                src: "images/project/blog/blog (7).png",
                 caption: "",
                 github: "https://github.com/IhtishamUl-haq/Blog"
             },
@@ -233,37 +233,37 @@ const projectsData = {
         gallery: [
             {
                 type: "image",
-                src: "images/project/SalesMonitoringSystem/Capture.png",
+                src: "images/project/SalesMonitoringSystem/Capture.PNG",
                 caption: "",
                 github: ""
             },
             {
                 type: "image",
-                src: "images/project/SalesMonitoringSystem/Capture2.png",
+                src: "images/project/SalesMonitoringSystem/Capture2.PNG",
                 caption: "",
                 github: ""
             },
             {
                 type: "image",
-                src: "images/project/SalesMonitoringSystem/Capture3.png",
+                src: "images/project/SalesMonitoringSystem/Capture3.PNG",
                 caption: "",
                 github: ""
             },
             {
                 type: "image",
-                src: "images/project/SalesMonitoringSystem/Capture4.png",
+                src: "images/project/SalesMonitoringSystem/Capture4.PNG",
                 caption: "",
                 github: ""
             },
             {
                 type: "image",
-                src: "images/project/SalesMonitoringSystem/Capture5.png",
+                src: "images/project/SalesMonitoringSystem/Capture5.PNG",
                 caption: "",
                 github: ""
             },
             {
                 type: "image",
-                src: "images/project/SalesMonitoringSystem/Capture6.png",
+                src: "images/project/SalesMonitoringSystem/Capture6.PNG",
                 caption: "",
                 github: ""
             },

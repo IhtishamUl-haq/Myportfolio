@@ -29,7 +29,7 @@ const portfolioData = {
             "id": 4,
             "title": "Sales Monitoring System ",
             "description": "Sales Monitoring System is a real-time web application that tracks and analyzes daily sales, offering insights into product performance, trends, and revenue to support quick, data-driven decisions.",
-            "image": "images/project/SalesMonitoringSystem/Capture.png",
+            "image": "images/project/SalesMonitoringSystem/Capture.PNG",
             "categories": ["fullstack", "dotnet"],
             "technologies": ["Bootstrap", ".NET Core", "Sql Server", "MVC"],
             "links": {
@@ -53,7 +53,7 @@ const portfolioData = {
             "id": 6,
             "title": "Blog",
             "description": "A simple platform where users can add and share their own blog posts.",
-            "image": "images/project/Blog/blog (1).png",
+            "image": "images/project/blog/blog (1).png",
             "categories": ["fullstack", "angular", "dotnet"],
             "technologies": [".NET Core", "Angular", "Sql Server", "Restful Api"],
             "links": {
